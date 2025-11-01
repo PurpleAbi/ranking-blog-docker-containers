@@ -18,4 +18,5 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=backend /app/target/movieranking-0.0.1-SNAPSHOT.jar ./
 EXPOSE 8080
-CMD ["java", "-jar", "movieranking-0.0.1-SNAPSHOT.jar"]
+CMD sh -c "java -Dserver.port=${PORT:-8080} -jar movieranking-0.0.1-SNAPSHOT.jar"
+
