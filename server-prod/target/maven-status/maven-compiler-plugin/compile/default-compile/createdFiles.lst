@@ -1,0 +1,17 @@
+com\myprojects\movieranking\model\MovieEntity.class
+com\myprojects\movieranking\service\MovieService.class
+com\myprojects\movieranking\MovierankingApplication.class
+com\myprojects\movieranking\model\PosterUrlData.class
+com\myprojects\movieranking\model\CombinedMovieSeriesList.class
+com\myprojects\movieranking\config\WebConfig$1.class
+com\myprojects\movieranking\model\SeriesEntity.class
+com\myprojects\movieranking\service\ExternalApiFetcher.class
+com\myprojects\movieranking\service\PosterService.class
+com\myprojects\movieranking\repository\SeriesRepository.class
+com\myprojects\movieranking\service\SeriesService.class
+com\myprojects\movieranking\config\WebConfig.class
+com\myprojects\movieranking\repository\MoviesRepository.class
+com\myprojects\movieranking\model\MovieDTO.class
+com\myprojects\movieranking\model\SeriesDTO.class
+com\myprojects\movieranking\controller\ApiController.class
+com\myprojects\movieranking\StartupPosterUpdater.class
