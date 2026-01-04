@@ -20,7 +20,7 @@ public class MovieEntity {
     private String title;
     @Column(name = "abis_review", columnDefinition = "TEXT")
     private String abisReview;
-    @Column(name = "abis_rating", columnDefinition = "SMALLINT")
+    @Column(name = "abis_rating")
     private Integer abisRating;
     @Column(name = "year_abi_reviewed")
     private Integer yearAbiReviewed;

@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface SeriesRepository extends JpaRepository<SeriesEntity, Integer> {
+public interface SeriesRepository extends JpaRepository<SeriesEntity, Long> {
 
     List<SeriesEntity> findByYearAbiReviewed(Integer yearAbiReviewed);
 
