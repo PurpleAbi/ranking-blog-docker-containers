@@ -16,7 +16,9 @@ RUN mvn clean package -DskipTests
 # Stage 2: Run
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
-COPY --from=backend /app/target/movieranking-0.0.1-SNAPSHOT.jar ./
-EXPOSE 8080
-CMD sh -c "java -Dserver.port=${PORT:-8080} -jar movieranking-0.0.1-SNAPSHOT.jar"
+# Note: The jar is inside /app/target/ because WORKDIR was /app in the build stage
+COPY --from=backend /app/target/*.jar app.jar
 
+EXPOSE 8080
+# Render provides the PORT environment variable automatically
+CMD ["sh", "-c", "java -Dserver.port=${PORT:-8080} -jar app.jar"]
