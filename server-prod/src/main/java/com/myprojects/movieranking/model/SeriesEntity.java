@@ -19,7 +19,7 @@ public class SeriesEntity {
     private String title;
     @Column(name = "abis_review")
     private String abisReview;
-    @Column(name = "abis_rating", columnDefinition = "TINYINT UNSIGNED")
+    @Column(name = "abis_rating", columnDefinition = "SMALLINT")
     private Integer abisRating;
     @Column(name = "year_abi_reviewed")
     private Integer yearAbiReviewed;
